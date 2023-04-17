@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav>
             <a>home</a>
             <ul>
@@ -22,9 +22,8 @@
             <a>contact</a>
         </nav>
     </header>
-    <section>
-        <h1>sebastian mullaert</h1><img src="./images/promo-image_1.png" alt="">
-
+    <section class="block-screen">
+        <h1>Sebastian mullaert</h1><img src="./images/promo-image_1.png" alt="">
         <div class="marquee-container">
             <span class="marquee-text">sebastian mullaert sebastian mullaert sebastian mullaert sebastian mullaert
                 sebastian mullaert sebastian mullaert sebastian mullaert sebastian mullaert sebastian mullaert sebastian
@@ -35,7 +34,30 @@
                 mullaert sebastian mullaert</span>
         </div>
     </section>
+    <div class="form-block">
+        <h2>Send an email
+        </h2>
+        <form action="">
+            <label for="Email" >
+                Email
+            </label>
+            <input name="Email" id="Email" type="text" placeholder="Your email">
+            <label for="Name">
+                Name
+            </label>
+            <input name="Name" id="Name" type="text" placeholder="Your name">
+            <label for="Massage">
+                Massage
+            </label>
+            <input name="Massage" id="Massage" type="text" placeholder="Start typing here">
+            <label for="Project type">
+                Project type
+            </label>
+            <input name="Project type" id="Project type" type="text" placeholder="Choose">
+            <button  type="submit">Send</button>
+        </form>
 
+    </div>
 
 
     <script src="index.js"></script>

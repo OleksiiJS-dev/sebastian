@@ -1,155 +1,166 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Quattrocento&display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Quattrocento&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    cursor: default;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  cursor: default;
 }
 
-header {
-    max-width: 1320px;
-    margin: 0 auto;
+.header {
+  max-width: 1320px;
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+  cursor: default;
+}
+.header nav {
+  color: black;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.06em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+.header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+.header nav ul li {
+  padding: 0 30px;
+  transition: transform 0.3s ease, padding 0.3s ease;
+}
+.header nav ul li:hover {
+  transform: scale(1.2);
+  padding: 0 23px;
+}
+.header nav a {
+  transition: transform 0.3s ease;
+  position: relative;
+}
+.header nav a:after {
+  content: url(./images/—.svg);
+  color: #FFFFFF;
+  position: absolute;
+  bottom: -20px;
+  left: 0%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.header nav a:hover:after {
+  opacity: 1;
+}
+.header nav a:hover {
+  transform: scale(1.2);
 }
 
-header {
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 1;
-    cursor: default;
+.block-screen {
+  background: url(./images/promo-background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.block-screen h1 {
+  text-align: center;
+  padding-top: 280px;
+  padding-bottom: 326px;
+  position: relative;
+  font-family: "Quattrocento", sans-serif;
+  font-weight: 300;
+  font-size: 96px;
+  line-height: 100px;
+  letter-spacing: 0.06em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  opacity: 0.85;
+}
+.block-screen h1:before {
+  content: "The simplicity of being";
+  top: 181px;
+  left: -29px;
+  position: absolute;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.block-screen h1:after {
+  content: "(biography)";
+  top: 455px;
+  left: 576px;
+  position: absolute;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.block-screen h1 {
+  max-width: 1111px;
+  margin: 0 auto;
+}
+.block-screen img {
+  position: absolute;
+  top: 551px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+.block-screen .marquee-container {
+  max-width: 100%;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  font-family: "Quattrocento", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #71870E;
+  padding-bottom: 75px;
+}
+.block-screen .marquee-container .marquee-text {
+  position: absolute;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
 }
 
-nav {
-    color: black;
-    padding-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    width: 100%;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    line-height: 27px;
-    letter-spacing: 0.06em;
-    text-transform: capitalize;
-    color: #FFFFFF;
-    opacity: 0.8;
+.form-block {
+  padding-top: 200px;
+  max-width: 605px;
+  margin: 0 auto;
+}
+.form-block form {
+  display: flex;
+  flex-direction: column;
+}
+.form-block h2 {
+  padding-bottom: 200px;
+  font-family: "Quattrocento";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 64px;
+  color: #000000;
+}
+.form-block input {
+  border: none;
+  outline: none;
+  border-bottom: 0.1px solid #000000;
+}
+.form-block label {
+  padding: 50px 0 20px;
 }
 
-ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-ul li {
-    padding: 0 30px;
-    transition: transform 0.3s ease, padding 0.3s ease;
-}
-
-ul li:hover {
-    transform: scale(1.2);
-    padding: 0 23px;
-}
-
-nav a {
-    transition: transform 0.3s ease;
-    position: relative;
-}
-
-nav a:after {
-    content: url(./images/—.svg);
-    color: #FFFFFF;
-    position: absolute;
-    bottom: -20px;
-    left: 0%;
-    width: 100%;
-    opacity: 0;  
-    transition: opacity 0.3s ease;
-}
-
-nav a:hover:after {
-    opacity: 1;
-}
-
-nav a:hover {
-    transform: scale(1.2);
-}
-
-h1 {
-    text-align: center;
-    padding-top: 280px;
-    padding-bottom: 326px;
-    position: relative;
-    font-family: "Quattrocento", sans-serif;
-    font-size: 96px;
-    line-height: 100px;
-    letter-spacing: 0.06em;
-    text-transform: capitalize;
-    color: #FFFFFF;
-}
-
-h1:before {
-    content: 'The simplicity of being';
-    top: 181px;
-    left: -29px;
-    position: absolute;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-    opacity: 0.9;
-}
-
-h1:after {
-    content: '(biography)';
-    top: 455px;
-    left: 576px;
-    position: absolute;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-    opacity: 0.9;
-
-}
-
-section {
-    background: url(./images/promo-background.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-section h1 {
-    max-width: 1111px;
-    margin: 0 auto;
-}
-
-section img {
-    position: absolute;
-    top: 551px;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 1;
-}
-
-
-.marquee-container {
-    max-width: 100%;
-    height: 20px;
-    overflow: hidden;
-    position: relative;
-    font-family: "Quattrocento", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    text-transform: capitalize;
-    color: #71870E;
-    padding-bottom: 75px;
-}
-
-.marquee-text {
-    position: absolute;
-    white-space: nowrap;
-    top: 0;
-    left: 0;
-}
+/*# sourceMappingURL=style.css.map */
