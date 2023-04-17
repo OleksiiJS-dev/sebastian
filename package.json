@@ -1,0 +1,22 @@
+{
+  "name": "sebastian",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OleksiiJS-dev/sebastian.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OleksiiJS-dev/sebastian/issues"
+  },
+  "homepage": "https://github.com/OleksiiJS-dev/sebastian#readme",
+  "dependencies": {
+    "scss": "^0.2.4"
+  }
+}
