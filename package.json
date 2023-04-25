@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/OleksiiJS-dev/sebastian#readme",
   "dependencies": {
+    "sass": "^1.62.0",
     "scss": "^0.2.4"
   }
 }

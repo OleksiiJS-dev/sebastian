@@ -202,16 +202,18 @@
     display: none;
   }
   .mobile {
+    margin-top: 50px;
     display: block;
     font-size: 40px;
     font-style: normal;
     font-weight: 300;
-    font-size: 113px;
+    font-size: 40px;
     line-height: 110%;
     text-align: center;
     color: #000000;
   }
   .mobile .mobile-header {
+    margin: 0 120px;
     font-family: "Ogg Light", sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -223,15 +225,37 @@
     font-style: italic;
   }
   .mobile .mobile-content {
-    padding: 10px;
+    margin: 26px 71px;
+    padding: 42px;
     margin-top: 26px;
     font-family: "Trade Gothic LT Extended", sans-serif;
-    font-size: 40px;
+    font-size: 22px;
     line-height: 175%;
-    color: #000000;
+    color: rgb(0, 0, 0);
     font-weight: 400;
     opacity: 0.85;
     text-align: left;
+  }
+  .mobile .mobile-content__read-more {
+    color: #CD9A3D;
+    line-height: 150%;
+  }
+  .mobile .pr {
+    position: relative;
+  }
+  .mobile .pa {
+    position: absolute;
+    bottom: -50%;
+    right: -50%;
+  }
+  .mobile .oh {
+    overflow: hidden;
+    z-index: 123;
+    top: 500px;
+    left: 315px;
+  }
+  .mobile .width100 {
+    min-width: 100%;
   }
 }
 
